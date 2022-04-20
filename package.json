@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "newmantest": "newman run testCollectionApi/covidTracking.json --ignore-redirects",
-    "htmlextratest": "newman run testCollectionApi/covidTracking.json --ignore-redirects -r htmlextra --reporter-htmlextra-export ./results/report.html"
+    "htmlextratest": "newman run testCollectionApi/covidTracking.json --ignore-redirects -r htmlextra --reporter-htmlextra-export index.html"
   },
   "keywords": [],
   "author": "",
