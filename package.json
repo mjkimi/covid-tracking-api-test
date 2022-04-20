@@ -1,0 +1,17 @@
+{
+  "name": "api_tests_covid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "newmantest": "newman run testCollectionApi/covidTracking.json --ignore-redirects",
+    "htmlextratest": "newman run testCollectionApi/covidTracking.json --ignore-redirects -r htmlextra --reporter-htmlextra-export ./results/report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^5.3.2",
+    "newman-reporter-htmlextra": "^1.22.8"
+  }
+}
